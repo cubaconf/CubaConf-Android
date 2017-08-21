@@ -7,14 +7,11 @@ import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import com.joanzapata.iconify.Iconify;
@@ -90,7 +87,7 @@ public class Main extends AppCompatActivity {
 
     public void clickLocation(View view){
         if (!preferences.getBoolean("cancelled_mm_install", false) && !appInstalledOrNot("com.mapswithme.maps.pro")){
-            showInstallAdminAlert();
+            showInstallMapsMeAlert();
         } else {
             Intent callIntent = new Intent(Intent.ACTION_VIEW);
             callIntent.setData(Uri.parse("geo:23.139729, -82.35103"));
@@ -98,7 +95,7 @@ public class Main extends AppCompatActivity {
         }
     }
 
-    private void showInstallAdminAlert() {
+    private void showInstallMapsMeAlert() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage(getString(R.string.install_mapsme_txt));
         builder.setCancelable(true)
