@@ -61,6 +61,11 @@ public class Main extends AppCompatActivity {
         openURI("https://www.facebook.com/cubaconf/");
     }
 
+    public void clickSubmissions(View view) {
+        Intent submissionsActivity = new Intent(this, Submissions.class);
+        startActivity(submissionsActivity);
+    }
+
     public void clickLocation(View view){
         if (!preferences.getBoolean("cancelled_mm_install", false) && !appInstalledOrNot("com.mapswithme.maps.pro")){
             showInstallMapsMeAlert();
