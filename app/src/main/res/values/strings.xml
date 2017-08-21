@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CubaConf</string>
+    <string name="large_text">
+        What\'s CubaConf?\n\n
+            CubaConf, is an international conference about free software and open technologies that will have its second edition in La Habana from November 7th to 9th, 2017. CubaConf is a meeting from the international community of enthusiasts of the free technologie\'s world, peer to peer focused and collective development. It seeks the participation of people with different profiles and diverse geographical locations.\n\n
+
+            From the organization of the conference, it is aimed at the diversity of both topics and projects, as of its participants, so the participation of women, minority groups, in these activities is crucial to build new inclusive spaces of knowledge and dialogue about technology. The main idea is to know people experience and organizations who work with and in free software, with old hardware technologies and little or slow bandwidth, to talk about how free software can help developing countries.\n\n
+
+            The conference will be for three days:\n\n
+
+                \t - The first day will be a variety of planned sessions and presentations
+                \t - On the second day the activities will be carried out in barcamp/unconference mode
+                \t - On the third day will be time and space to work together in small groups on the proposed projects or on any topic of interest.
+    </string>
+    <string name="register">Register</string>
+    <string name="send_proposal">Speak at CubaConf!</string>
+    <string name="proposals">Submissions</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="install_mapsme">Install MAPS.ME</string>
+    <string name="install_mapsme_txt">We noticed you don\'t have MAPS.ME installed. MAPS.ME allows you to download your maps so you can use it while offline. We encourage you to use it. Also it\'s awesome ;)</string>
+
+
+</resources>

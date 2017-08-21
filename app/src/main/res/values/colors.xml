@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#81CEE8</color>
+    <color name="colorPrimaryDark">#286090</color>
+    <color name="colorAccent">#cb1515</color>
+
+    <color name="green">#00723B</color>
+    <color name="orange">#EC971F</color>
+    <color name="twitter_blue">#2DAAE2</color>
+    <color name="facebook_blue">#3B5998</color>
+</resources>
