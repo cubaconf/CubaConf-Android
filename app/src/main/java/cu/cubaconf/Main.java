@@ -85,7 +85,7 @@ public class Main extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int id) {
                         SharedPreferences.Editor editor = preferences.edit();
                         editor.putBoolean("cancelled_mm_install", true);
-                        editor.commit();
+                        editor.apply();
 
                         Intent callIntent = new Intent(Intent.ACTION_VIEW);
                         callIntent.setData(Uri.parse("geo:23.139729, -82.35103"));
@@ -104,8 +104,7 @@ public class Main extends AppCompatActivity {
             pm.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
             return true;
         } catch (PackageManager.NameNotFoundException e) {
+            return false;
         }
-
-        return false;
     }
 }
