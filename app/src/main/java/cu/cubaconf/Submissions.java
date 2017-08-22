@@ -1,10 +1,14 @@
 package cu.cubaconf;
 
+import android.app.SearchManager;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Editable;
-import android.text.TextWatcher;
+import android.support.v7.widget.SearchView;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.EditText;
@@ -51,40 +55,31 @@ public class Submissions extends AppCompatActivity {
         }
 
 
-        search = (EditText) findViewById(R.id.EditTextSearch);
-
-        search.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                ArrayList<Submission> newsubs = new ArrayList<Submission>();
-
-                for (Submission submission : submissions) {
-                    if (submission.getSummary().toLowerCase().contains(String.valueOf(s).toLowerCase())
-                            || submission.getName().toLowerCase().contains(String.valueOf(s).toLowerCase())
-                            || submission.getTitle().toLowerCase().contains(String.valueOf(s).toLowerCase())) {
-                        newsubs.add(submission);
-                    }
-                }
-
-                submissionsListView.setAdapter(new SubmissionAdapter(getBaseContext(), newsubs.toArray(new Submission[newsubs.size()])));
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-
         Collections.shuffle(Arrays.asList(submissions));
 
-        submissionsListView.setAdapter(new SubmissionAdapter(this, submissions));
+        Intent intent = getIntent();
+        if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
+            String query = intent.getStringExtra(SearchManager.QUERY);
+            submissionsListView.setAdapter(new SubmissionAdapter(getBaseContext(), search(query)));
+        } else {
+            submissionsListView.setAdapter(new SubmissionAdapter(this, submissions));
+        }
 
         hideKeyboard();
+    }
+
+    public Submission[] search(String s) {
+        ArrayList<Submission> newsubs = new ArrayList<Submission>();
+
+        for (Submission submission : submissions) {
+            if (submission.getSummary().toLowerCase().contains(String.valueOf(s).toLowerCase())
+                    || submission.getName().toLowerCase().contains(String.valueOf(s).toLowerCase())
+                    || submission.getTitle().toLowerCase().contains(String.valueOf(s).toLowerCase())) {
+                newsubs.add(submission);
+            }
+        }
+
+        return newsubs.toArray(new Submission[newsubs.size()]);
     }
 
     public void hideKeyboard() {
@@ -101,5 +96,20 @@ public class Submissions extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the options menu from XML
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+
+        // Get the SearchView and set the searchable configuration
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView = (SearchView) menu.findItem(R.id.menu_search).getActionView();
+//        // Assumes current activity is the searchable activity
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+
+        return true;
     }
 }

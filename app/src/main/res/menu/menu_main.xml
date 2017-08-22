@@ -1,9 +1,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="cu.cubaconf.Main" >
-    <item android:id="@+id/action_settings"
-        android:title=""
+    tools:context="cu.cubaconf.Main">
+    <item
+        android:id="@+id/menu_search"
         android:orderInCategory="100"
-        app:showAsAction="never" />
+        android:title="@string/search"
+        app:showAsAction="always"
+        appcompat:actionViewClass="android.support.v7.widget.SearchView" />
 </menu>
