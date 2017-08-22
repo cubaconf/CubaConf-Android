@@ -20,4 +20,6 @@
     <string name="install_mapsme">Instalar MAPS.ME</string>
     <string name="install_mapsme_txt">Hemos notado que no tiene MAPS.ME installado. MAPS.ME le permite descargar sus mapas para que pueda utilizarlo mientras está desconectado. Le invitamos a utilizarlo. Además, es genial ;)</string>
 
+    <string name="search">Buscar</string>
+    <string name="search_hint">Buscar</string>
 </resources>
