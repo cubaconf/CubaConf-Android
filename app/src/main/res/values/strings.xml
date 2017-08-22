@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">CubaConf</string>
+    <!--<string name="large_text2">asdf</string>-->
     <string name="large_text">
         What\'s CubaConf?\n\n
             CubaConf, is an international conference about free software and open technologies that will have its second edition in La Habana from November 7th to 9th, 2017. CubaConf is a meeting from the international community of enthusiasts of the free technologie\'s world, peer to peer focused and collective development. It seeks the participation of people with different profiles and diverse geographical locations.\n\n
@@ -8,9 +9,9 @@
 
             The conference will be for three days:\n\n
 
-                \t - The first day will be a variety of planned sessions and presentations
-                \t - On the second day the activities will be carried out in barcamp/unconference mode
-                \t - On the third day will be time and space to work together in small groups on the proposed projects or on any topic of interest.
+                \t - The first day will be a variety of planned sessions and presentations\n
+                \t - On the second day the activities will be carried out in barcamp/unconference mode\n
+                \t - On the third day will be time and space to work together in small groups on the proposed projects or on any topic of interest.\n
     </string>
     <string name="register">Register</string>
     <string name="send_proposal">Speak at CubaConf!</string>
