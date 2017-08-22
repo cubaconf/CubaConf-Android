@@ -17,6 +17,7 @@ public class Submission {
     String title;
     String description;
     String audience_level;
+    String[] tag_list;
 
     public String getName() {
         return name;
@@ -64,5 +65,9 @@ public class Submission {
 
     public String getAudience_level() {
         return audience_level;
+    }
+
+    public String[] getTag_list() {
+        return tag_list;
     }
 }
