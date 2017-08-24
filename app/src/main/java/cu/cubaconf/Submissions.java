@@ -10,7 +10,9 @@ import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 
@@ -26,12 +28,13 @@ import java.util.Collections;
 import cu.cubaconf.adapter.SubmissionAdapter;
 import cu.cubaconf.model.Submission;
 
-public class Submissions extends AppCompatActivity {
+public class Submissions extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     public EditText search;
     public ListView submissionsListView;
     private Reader reader;
     private Submission[] submissions;
+    private Submission[] currentSubmissions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,11 +63,14 @@ public class Submissions extends AppCompatActivity {
         Intent intent = getIntent();
         if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
             String query = intent.getStringExtra(SearchManager.QUERY);
-            submissionsListView.setAdapter(new SubmissionAdapter(getBaseContext(), search(query)));
+            currentSubmissions = search(query);
+            submissionsListView.setAdapter(new SubmissionAdapter(getBaseContext(), currentSubmissions));
         } else {
+            currentSubmissions = submissions;
             submissionsListView.setAdapter(new SubmissionAdapter(this, submissions));
         }
 
+        submissionsListView.setOnItemClickListener(this);
         hideKeyboard();
     }
 
@@ -111,5 +117,13 @@ public class Submissions extends AppCompatActivity {
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
 
         return true;
+    }
+
+
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+        Intent intent = new Intent(view.getContext(), SubmissionDetail.class);
+        intent.putExtra("submission", currentSubmissions[position]);
+        startActivity(intent);
     }
 }

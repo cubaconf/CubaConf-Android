@@ -1,10 +1,12 @@
 package cu.cubaconf.model;
 
+import java.io.Serializable;
+
 /**
  * Created by akiel on 8/21/17.
  */
 
-public class Submission {
+public class Submission implements Serializable {
     String name;
     String summary;
     String email;
