@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.joanzapata.iconify.widget.IconTextView;
 
 import cu.cubaconf.model.Submission;
+import us.feras.mdv.MarkdownView;
 
 public class SubmissionDetail extends AppCompatActivity {
 
@@ -31,7 +32,8 @@ public class SubmissionDetail extends AppCompatActivity {
         bar.setTitle(submission.getTitle());
 
         TextView textViewTitle = (TextView) findViewById(R.id.textViewTitle);
-        TextView textViewDescription = (TextView) findViewById(R.id.textViewDescription);
+//        TextView textViewDescription = (TextView) findViewById(R.id.textViewDescription);
+        MarkdownView textViewDescription = (MarkdownView) findViewById(R.id.textViewDescription);
         TextView textViewAuthorName = (TextView) findViewById(R.id.textViewAuthorName);
         TextView textViewTwitter = (TextView) findViewById(R.id.textViewTwitter);
         TextView textViewOrganization = (TextView) findViewById(R.id.textViewOrganization);
@@ -39,7 +41,7 @@ public class SubmissionDetail extends AppCompatActivity {
 
 
         textViewTitle.setText(submission.getTitle());
-        textViewDescription.setText(submission.getDescription());
+        textViewDescription.loadMarkdown(submission.getDescription());
         textViewAuthorName.setText(submission.getName());
 
         if (!submission.getTwitter().equals("")) {
