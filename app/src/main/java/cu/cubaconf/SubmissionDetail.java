@@ -1,5 +1,7 @@
 package cu.cubaconf;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +15,8 @@ import cu.cubaconf.model.Submission;
 
 public class SubmissionDetail extends AppCompatActivity {
 
+    Submission submission;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +26,7 @@ public class SubmissionDetail extends AppCompatActivity {
         bar.setDisplayOptions(ActionBar.DISPLAY_HOME_AS_UP | ActionBar.DISPLAY_SHOW_CUSTOM | ActionBar.DISPLAY_SHOW_TITLE);
         bar.setHomeButtonEnabled(true);
 
-        Submission submission = (Submission) getIntent().getSerializableExtra("submission");
+        submission = (Submission) getIntent().getSerializableExtra("submission");
 
         bar.setTitle(submission.getTitle());
 
@@ -65,4 +69,15 @@ public class SubmissionDetail extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    public void openURI(String uri) {
+        Intent callIntent = new Intent(Intent.ACTION_VIEW);
+        callIntent.setData(Uri.parse(uri));
+        startActivity(callIntent);
+    }
+
+    public void clickTwitterUser(View view) {
+        openURI("https://twitter.com/" + submission.getTwitter());
+    }
+
 }
