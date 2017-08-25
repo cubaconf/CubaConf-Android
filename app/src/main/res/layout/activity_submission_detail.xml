@@ -10,8 +10,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -45,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginRight="8dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="9dp"
                 android:text="Description"
@@ -72,6 +74,102 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/constraintUData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textViewOrganization"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginStart="4dp"
+                            android:text="organization"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintLeft_toRightOf="@+id/iconOrg"
+                            app:layout_constraintRight_toLeftOf="@+id/iconTextView2"
+                            app:layout_constraintTop_toTopOf="@+id/iconOrg" />
+
+                        <TextView
+                            android:id="@+id/textViewAuthorName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="9dp"
+                            android:text="author"
+                            android:textStyle="bold"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/iconTextView2"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.joanzapata.iconify.widget.IconTextView
+                            android:id="@+id/iconOrg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:text="{fa-university}"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="15sp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewTwitter" />
+
+                        <com.joanzapata.iconify.widget.IconTextView
+                            android:id="@+id/iconTwitter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="10dp"
+                            android:onClick="clickTwitterUser"
+                            android:text="{fa-twitter}"
+                            android:textColor="@color/twitter_blue"
+                            android:textSize="20sp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewAuthorName" />
+
+                        <TextView
+                            android:id="@+id/textViewTwitter"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="8dp"
+                            android:onClick="clickTwitterUser"
+                            android:text="twitter"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintLeft_toRightOf="@+id/iconTwitter"
+                            app:layout_constraintRight_toLeftOf="@+id/iconTextView2"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewAuthorName" />
+
+                        <com.joanzapata.iconify.widget.IconTextView
+                            android:id="@+id/iconTextView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="16dp"
+                            android:text="{fa-user}"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="60sp"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </android.support.constraint.ConstraintLayout>
+
                     <TextView
                         android:id="@+id/textViewBio"
                         android:layout_width="0dp"
@@ -88,95 +186,10 @@
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/iconTextView2"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintUData"
                         app:layout_constraintVertical_bias="1.0" />
 
-                    <TextView
-                        android:id="@+id/textViewOrganization"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginStart="4dp"
-                        android:layout_marginTop="0dp"
-                        android:text="organization"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintLeft_toRightOf="@+id/iconOrg"
-                        app:layout_constraintRight_toLeftOf="@+id/iconTextView2"
-                        app:layout_constraintTop_toTopOf="@+id/iconOrg" />
 
-                    <TextView
-                        android:id="@+id/textViewAuthorName"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="9dp"
-                        android:text="author"
-                        android:textStyle="bold"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toLeftOf="@+id/iconTextView2"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <com.joanzapata.iconify.widget.IconTextView
-                        android:id="@+id/iconOrg"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="{fa-university}"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="15sp"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textViewTwitter" />
-
-                    <com.joanzapata.iconify.widget.IconTextView
-                        android:id="@+id/iconTwitter"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="10dp"
-                        android:onClick="clickTwitterUser"
-                        android:text="{fa-twitter}"
-                        android:textColor="@color/twitter_blue"
-                        android:textSize="20sp"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textViewAuthorName" />
-
-                    <TextView
-                        android:id="@+id/textViewTwitter"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginStart="4dp"
-                        android:layout_marginTop="8dp"
-                        android:onClick="clickTwitterUser"
-                        android:text="twitter"
-                        app:layout_constraintHorizontal_bias="1.0"
-                        app:layout_constraintLeft_toRightOf="@+id/iconTwitter"
-                        app:layout_constraintRight_toLeftOf="@+id/iconTextView2"
-                        app:layout_constraintTop_toBottomOf="@+id/textViewAuthorName" />
-
-                    <com.joanzapata.iconify.widget.IconTextView
-                        android:id="@+id/iconTextView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
-                        android:layout_marginTop="16dp"
-                        android:text="{fa-user}"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="60sp"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
 
                 </android.support.constraint.ConstraintLayout>
             </android.support.v7.widget.CardView>
