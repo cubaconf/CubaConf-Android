@@ -16,12 +16,13 @@
     <string name="register">Register</string>
     <string name="send_proposal">Speak at CubaConf!</string>
     <string name="proposals">Submissions</string>
-    <string name="ok">Ok</string>
+    <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
     <string name="install_mapsme">Install MAPS.ME</string>
     <string name="install_mapsme_txt">We noticed you don\'t have MAPS.ME installed. MAPS.ME allows you to download your maps so you can use it while offline. We encourage you to use it. Also it\'s awesome ;)</string>
 
     <string name="search">Search</string>
     <string name="search_hint">Search</string>
-
+    <string name="title_activity_schedule">Schedule</string>
+    <string name="day">day</string>
 </resources>

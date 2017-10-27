@@ -32,7 +32,6 @@ public class SubmissionDetail extends AppCompatActivity {
         bar.setTitle(submission.getTitle());
 
         TextView textViewTitle = (TextView) findViewById(R.id.textViewTitle);
-//        TextView textViewDescription = (TextView) findViewById(R.id.textViewDescription);
         MarkdownView textViewDescription = (MarkdownView) findViewById(R.id.textViewDescription);
         TextView textViewAuthorName = (TextView) findViewById(R.id.textViewAuthorName);
         TextView textViewTwitter = (TextView) findViewById(R.id.textViewTwitter);

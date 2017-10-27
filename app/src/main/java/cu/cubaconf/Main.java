@@ -66,8 +66,13 @@ public class Main extends AppCompatActivity {
         startActivity(submissionsActivity);
     }
 
+    public void clickSchedule(View view) {
+        Intent scheduleActivity = new Intent(this, Schedule.class);
+        startActivity(scheduleActivity);
+    }
+
     public void clickLocation(View view){
-        if (!preferences.getBoolean("cancelled_mm_install", false) && !appInstalledOrNot("com.mapswithme.maps.pro")){
+        if (!preferences.getBoolean("cancelled_mm_install", false) && !mapsmeInstalled()) {
             showInstallMapsMeAlert();
         } else {
             Intent callIntent = new Intent(Intent.ACTION_VIEW);
@@ -103,10 +108,10 @@ public class Main extends AppCompatActivity {
         alert.show();
     }
 
-    private boolean appInstalledOrNot(String uri) {
+    private boolean mapsmeInstalled() {
         PackageManager pm = getPackageManager();
         try {
-            pm.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
+            pm.getPackageInfo("com.mapswithme.maps.pro", PackageManager.GET_ACTIVITIES);
             return true;
         } catch (PackageManager.NameNotFoundException e) {
             return false;

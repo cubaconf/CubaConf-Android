@@ -22,4 +22,6 @@
 
     <string name="search">Buscar</string>
     <string name="search_hint">Buscar</string>
+    <string name="title_activity_schedule">Programa</string>
+    <string name="day">día</string>
 </resources>

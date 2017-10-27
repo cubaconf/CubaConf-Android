@@ -28,6 +28,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_constraintLeft_creator="1"
             tools:layout_constraintRight_creator="1">
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -35,7 +36,8 @@
                 android:onClick="clickRegister"
                 android:text="@string/register"
                 android:textColor="@android:color/white"
-                />
+                android:visibility="gone" />
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,7 +45,16 @@
                 android:onClick="clickSendProp"
                 android:text="@string/send_proposal"
                 android:textColor="@android:color/white"
-                />
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/orange"
+                android:onClick="clickSchedule"
+                android:text="@string/title_activity_schedule"
+                android:textColor="@android:color/white" />
 
         </LinearLayout>
 
