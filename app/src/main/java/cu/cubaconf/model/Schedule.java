@@ -11,10 +11,10 @@ public class Schedule implements Serializable {
     private Day day2;
     private Day day3;
 
-    public Schedule(Day day1, Day day2, Day day3) {
-        this.day1 = day1;
-        this.day2 = day2;
-        this.day3 = day3;
+    public Schedule() {
+        this.day1 = new Day();
+        this.day2 = new Day();
+        this.day3 = new Day();
     }
 
     public Day getDay1() {

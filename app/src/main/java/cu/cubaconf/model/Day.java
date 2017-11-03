@@ -13,12 +13,12 @@ public class Day implements Serializable {
     private Event[] room4;
     private Event[] room5;
 
-    public Day(Event[] room1, Event[] room2, Event[] room3, Event[] room4, Event[] room5) {
-        this.room1 = room1;
-        this.room2 = room2;
-        this.room3 = room3;
-        this.room4 = room4;
-        this.room5 = room5;
+    public Day() {
+        this.room1 = new Event[]{};
+        this.room2 = new Event[]{};
+        this.room3 = new Event[]{};
+        this.room4 = new Event[]{};
+        this.room5 = new Event[]{};
     }
 
     public Event[] getRoom1() {

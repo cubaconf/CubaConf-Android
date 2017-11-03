@@ -6,11 +6,11 @@ import com.google.gson.annotations.SerializedName;
 public class Event {
 
     @SerializedName("author")
-    private String mAuthor;
+    private String mAuthor = "";
     @SerializedName("time")
-    private String mTime;
+    private String mTime = "";
     @SerializedName("title")
-    private String mTitle;
+    private String mTitle = "";
 
     public String getAuthor() {
         return mAuthor;

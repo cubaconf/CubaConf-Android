@@ -23,8 +23,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 
+import cu.cubaconf.adapter.EventAdapter;
+
 public class Schedule extends AppCompatActivity {
 
+    public static cu.cubaconf.model.Schedule schedule;
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
@@ -34,7 +37,6 @@ public class Schedule extends AppCompatActivity {
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
     private SectionsPagerAdapter mSectionsPagerAdapter;
-
     /**
      * The {@link ViewPager} that will host the section contents.
      */
@@ -61,7 +63,7 @@ public class Schedule extends AppCompatActivity {
 
         Gson GSON = new Gson();
         Reader reader;
-        cu.cubaconf.model.Schedule schedule = null;
+
 
         try {
             reader = new InputStreamReader(getAssets().open("data/schedule.json"));
@@ -110,16 +112,81 @@ public class Schedule extends AppCompatActivity {
 
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.navigation_day1:
+                switch (getArguments().getInt(ARG_SECTION_NUMBER)) {
+                    case 1: {
+                        switch (item.getItemId()) {
+                            case R.id.navigation_day1:
+                                events.setAdapter(new EventAdapter(getContext(), schedule.getDay1().getRoom1()));
+                                return true;
+                            case R.id.navigation_day2:
+                                events.setAdapter(new EventAdapter(getContext(), schedule.getDay2().getRoom1()));
+                                return true;
+                            case R.id.navigation_day3:
+                                events.setAdapter(new EventAdapter(getContext(), schedule.getDay3().getRoom1()));
+                                return true;
+                        }
+                        break;
+                    }
+                    case 2: {
+                        switch (item.getItemId()) {
+                            case R.id.navigation_day1:
+                                events.setAdapter(new EventAdapter(getContext(), schedule.getDay1().getRoom2()));
+                                return true;
+                            case R.id.navigation_day2:
+                                events.setAdapter(new EventAdapter(getContext(), schedule.getDay2().getRoom2()));
+                                return true;
+                            case R.id.navigation_day3:
+                                events.setAdapter(new EventAdapter(getContext(), schedule.getDay3().getRoom2()));
+                                return true;
+                        }
+                        events.setAdapter(new EventAdapter(getContext(), schedule.getDay1().getRoom2()));
+                        break;
+                    }
+                    case 3: {
+                        switch (item.getItemId()) {
+                            case R.id.navigation_day1:
 
-                        return true;
-                    case R.id.navigation_day2:
+                                return true;
+                            case R.id.navigation_day2:
 
-                        return true;
-                    case R.id.navigation_day3:
+                                return true;
+                            case R.id.navigation_day3:
 
-                        return true;
+                                return true;
+                        }
+                        events.setAdapter(new EventAdapter(getContext(), schedule.getDay1().getRoom3()));
+                        break;
+                    }
+                    case 4: {
+                        switch (item.getItemId()) {
+                            case R.id.navigation_day1:
+
+                                return true;
+                            case R.id.navigation_day2:
+
+                                return true;
+                            case R.id.navigation_day3:
+
+                                return true;
+                        }
+                        events.setAdapter(new EventAdapter(getContext(), schedule.getDay1().getRoom4()));
+                        break;
+                    }
+                    case 5: {
+                        switch (item.getItemId()) {
+                            case R.id.navigation_day1:
+
+                                return true;
+                            case R.id.navigation_day2:
+
+                                return true;
+                            case R.id.navigation_day3:
+
+                                return true;
+                        }
+                        events.setAdapter(new EventAdapter(getContext(), schedule.getDay1().getRoom5()));
+                        break;
+                    }
                 }
                 return false;
             }
@@ -150,8 +217,29 @@ public class Schedule extends AppCompatActivity {
 
             events = rootView.findViewById(R.id.listViewEvents);
 
+            switch (getArguments().getInt(ARG_SECTION_NUMBER)) {
+                case 1: {
+                    events.setAdapter(new EventAdapter(getContext(), schedule.getDay1().getRoom1()));
+                    break;
+                }
+                case 2: {
+                    events.setAdapter(new EventAdapter(getContext(), schedule.getDay1().getRoom2()));
+                    break;
+                }
+                case 3: {
+                    events.setAdapter(new EventAdapter(getContext(), schedule.getDay1().getRoom3()));
+                    break;
+                }
+                case 4: {
+                    events.setAdapter(new EventAdapter(getContext(), schedule.getDay1().getRoom4()));
+                    break;
+                }
+                case 5: {
+                    events.setAdapter(new EventAdapter(getContext(), schedule.getDay1().getRoom5()));
+                    break;
+                }
+            }
 
-//            events.setAdapter(new SubmissionAdapter(getContext(), schedule));
 
             return rootView;
         }
