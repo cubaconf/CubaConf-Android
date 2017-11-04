@@ -16,8 +16,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
+import com.joanzapata.iconify.widget.IconTextView;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -79,7 +81,7 @@ public class Schedule extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_schedule2, menu);
+//        getMenuInflater().inflate(R.menu.menu_schedule2, menu);
         return true;
     }
 
@@ -108,6 +110,8 @@ public class Schedule extends AppCompatActivity {
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
         private ListView events;
+        private IconTextView sun;
+        private TextView empty;
         private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
                 = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -115,18 +119,22 @@ public class Schedule extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 /* ToDo: This is so ugly I can't even think why I did it this way. Please, REFACTOR! */
 
+                Event[] eventsList = new Event[0];
+
                 switch (item.getItemId()) {
                     case R.id.navigation_day1:
-                        events.setAdapter(new EventAdapter(getContext(), getEvents(getArguments().getInt(ARG_SECTION_NUMBER), 1)));
-                        return true;
+                        eventsList = getEvents(getArguments().getInt(ARG_SECTION_NUMBER), 1);
+                        break;
                     case R.id.navigation_day2:
-                        events.setAdapter(new EventAdapter(getContext(), getEvents(getArguments().getInt(ARG_SECTION_NUMBER), 2)));
-                        return true;
+                        eventsList = getEvents(getArguments().getInt(ARG_SECTION_NUMBER), 2);
+                        break;
                     case R.id.navigation_day3:
-                        events.setAdapter(new EventAdapter(getContext(), getEvents(getArguments().getInt(ARG_SECTION_NUMBER), 3)));
-                        return true;
+                        eventsList = getEvents(getArguments().getInt(ARG_SECTION_NUMBER), 3);
+                        break;
                 }
-                return false;
+                events.setAdapter(new EventAdapter(getContext(), eventsList));
+                setEmptyNotVisible(eventsList.length > 0);
+                return true;
             }
 
         };
@@ -144,6 +152,16 @@ public class Schedule extends AppCompatActivity {
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
             fragment.setArguments(args);
             return fragment;
+        }
+
+        private void setEmptyNotVisible(boolean visible) {
+            if (visible) {
+                sun.setVisibility(View.GONE);
+                empty.setVisibility(View.GONE);
+            } else {
+                sun.setVisibility(View.VISIBLE);
+                empty.setVisibility(View.VISIBLE);
+            }
         }
 
         public Event[] getEvents(int room, int day) {
@@ -217,9 +235,14 @@ public class Schedule extends AppCompatActivity {
             BottomNavigationView navigation = (BottomNavigationView) rootView.findViewById(R.id.navigation);
             navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-            events = rootView.findViewById(R.id.listViewEvents);
-            events.setAdapter(new EventAdapter(getContext(), getEvents(getArguments().getInt(ARG_SECTION_NUMBER), 1)));
+            sun = rootView.findViewById(R.id.sun);
+            empty = rootView.findViewById(R.id.textViewEmpty);
 
+            Event[] eventsList = getEvents(getArguments().getInt(ARG_SECTION_NUMBER), 1);
+            events = rootView.findViewById(R.id.listViewEvents);
+            events.setAdapter(new EventAdapter(getContext(), eventsList));
+
+            setEmptyNotVisible(eventsList.length > 0);
             return rootView;
         }
     }

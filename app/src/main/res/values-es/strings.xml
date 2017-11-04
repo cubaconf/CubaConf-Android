@@ -24,4 +24,7 @@
     <string name="search_hint">Buscar</string>
     <string name="title_activity_schedule">Programa</string>
     <string name="day">día</string>
+
+    <string name="room">Local %1$d</string>
+    <string name="empty">Este local parece estar vacío</string>
 </resources>

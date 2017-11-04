@@ -30,8 +30,5 @@
     <string name="section_format">Hello World from section: %1$d</string>
 
     <string name="room">Room %1$d</string>
-    <string name="room2">Room 2</string>
-    <string name="room3">Room 3</string>
-    <string name="room4">Room 4</string>
-    <string name="room5">Room 5</string>
+    <string name="empty">This room seems to be empty</string>
 </resources>
