@@ -7,9 +7,54 @@
         "time": "8:30 - 9:00"
       },
       {
-        "author": "Medardo Rodríguez",
-        "title": "El papel de las buenas prácticas de programación en el desarrollo eficiente de las tecnologías",
+        "author": "",
+        "title": "Opening Session",
         "time": "9:00 - 9:30"
+      },
+      {
+        "author": "Ismael Olea",
+        "title": "HackLab Almería, un modelo de dinamización tecnológica hiperlocal",
+        "time": "9:30 - 10:15"
+      },
+      {
+        "author": "",
+        "title": "Break",
+        "time": "10:20 – 10:30"
+      },
+      {
+        "author": "Valessio Brito",
+        "title": "How To Make Money with Free Software",
+        "time": "10:30 – 11:15"
+      },
+      {
+        "author": "Elizabeth K. Joseph",
+        "title": " The Open Sourcing of Infrastructure",
+        "time": "11:20 – 12:05"
+      },
+      {
+        "author": "",
+        "title": "Lunch",
+        "time": "12:05 – 13:00"
+      },
+      {
+        "author": "",
+        "title": "Lightning Talk",
+        "time": "13:00 – 13:30"
+      },
+      {
+        "author": "Christian Weilbach",
+        "title": " Free data and the infrastructure of the commons",
+        "time": "13:35 – 14:20"
+      },
+      {
+        "author": "Delio Orozco",
+        "title": "Experiencias en la aplicación de tecnologías libres para la promoción, preservación y difusión de la Memoria Histórica y Cultural en Cuba empleando tecnologías libres.",
+        "time": "14:25 – 15:10"
+      },
+      {
+        "author": "",
+        "title": "Closing Session",
+        "time": "15:15 – 16:00"
       }
     ],
     "room2": [
@@ -17,6 +62,155 @@
         "author": "",
         "title": "Breakfast",
         "time": "8:30 - 9:00"
+      },
+      {
+        "author": "",
+        "title": "Opening Session",
+        "time": "9:00 - 9:30"
+      },
+      {
+        "author": "",
+        "title": "Break",
+        "time": "10:20 – 10:30"
+      },
+      {
+        "author": "Katia Choquehuanca / Marcelo Mamani",
+        "title": " El software libre para el desarrollo",
+        "time": "10:30 – 11:15"
+      },
+      {
+        "author": "Elihú Mejía",
+        "title": "Lua Live Coding: Tecnologías locales para la improvisación algorítmica en vivo",
+        "time": "11:20 – 12:05"
+      },
+      {
+        "author": "",
+        "title": "Lunch",
+        "time": "12:05 – 13:00"
+      },
+      {
+        "author": "",
+        "title": "Lightning Talk",
+        "time": "13:00 – 13:30"
+      },
+      {
+        "author": "Leonel Salazar Videaux",
+        "title": "Experiencias de la comunidad de usuarios de Debian GNU/Linux en la Cuba Profunda",
+        "time": "13:35 – 14:20"
+      },
+      {
+        "author": "Raul Antonio",
+        "title": "Aplicación de IoT junto a tecnología TVWS para el desarrollo comunitario",
+        "time": "14:25 – 15:10"
+      },
+      {
+        "author": "",
+        "title": "Closing Session",
+        "time": "15:15 – 16:00"
+      }
+    ],
+    "room3": [
+      {
+        "author": "",
+        "title": "Breakfast",
+        "time": "8:30 - 9:00"
+      },
+      {
+        "author": "",
+        "title": "Opening Session",
+        "time": "9:00 - 9:30"
+      },
+      {
+        "author": "",
+        "title": "Break",
+        "time": "10:20 – 10:30"
+      },
+      {
+        "author": "Kali Kaneko",
+        "title": "Proveedores de servicios alternativos: descentralizacion, privacidad y autogestion para la red que queremos.",
+        "time": "10:30 – 11:15"
+      },
+      {
+        "author": "Tarus Balog",
+        "title": "OpenNMS WHO?",
+        "time": "11:20 – 12:05"
+      },
+      {
+        "author": "",
+        "title": "Lunch",
+        "time": "12:05 – 13:00"
+      },
+      {
+        "author": "",
+        "title": "Lightning Talk",
+        "time": "13:00 – 13:30"
+      },
+      {
+        "author": "Inaury Portuondo",
+        "title": "Espacios culturales de la esclavitud urbana  en la Habana Vieja",
+        "time": "13:35 – 14:20"
+      },
+      {
+        "author": "Ozkar L. Garcell",
+        "title": " Better way of creating APIs with Flask and Graphene",
+        "time": "14:25 – 15:10"
+      },
+      {
+        "author": "",
+        "title": "Closing Session",
+        "time": "15:15 – 16:00"
+      }
+    ],
+    "room4": [
+      {
+        "author": "",
+        "title": "Breakfast",
+        "time": "8:30 - 9:00"
+      },
+      {
+        "author": "",
+        "title": "Opening Session",
+        "time": "9:00 - 9:30"
+      },
+      {
+        "author": "",
+        "title": "Break",
+        "time": "10:20 – 10:30"
+      },
+      {
+        "author": "Erik Rivera",
+        "title": "Análisis de Datos con Python y su ecosistema de librerías",
+        "time": "10:30 – 11:15"
+      },
+      {
+        "author": "Tobias Mueller",
+        "title": "Measuring Security and Privacy Aspects on the Web",
+        "time": "11:20 – 12:05"
+      },
+      {
+        "author": "",
+        "title": "Lunch",
+        "time": "12:05 – 13:00"
+      },
+      {
+        "author": "",
+        "title": "Lightning Talk",
+        "time": "13:00 – 13:30"
+      },
+      {
+        "author": "Victor Gevers",
+        "title": "Repairing the internet with Responsible Disclosures",
+        "time": "13:35 – 14:20"
+      },
+      {
+        "author": "Alexandre Peres",
+        "title": " Las influencias de los monopolios de TI en latinoamerica y sus consecuenciaspara la educación",
+        "time": "14:25 – 15:10"
+      },
+      {
+        "author": "",
+        "title": "Closing Session",
+        "time": "15:15 – 16:00"
       }
     ]
   },
@@ -28,9 +222,54 @@
         "time": "8:30 - 9:00"
       },
       {
-        "author": "Medardo Rodríguez",
-        "title": "El papel de las buenas prácticas de programación en el desarrollo eficiente de las tecnologías",
+        "author": "",
+        "title": "Opening Session",
         "time": "9:00 - 9:30"
+      },
+      {
+        "author": "Dr. Mixael S Laufer",
+        "title": " How to Torrent a Pharmaceutical Drug: File Sharing Saves Lives",
+        "time": "9:30 - 10:15"
+      },
+      {
+        "author": "",
+        "title": "Break",
+        "time": "10:20 – 10:30"
+      },
+      {
+        "author": "",
+        "title": "Vote Session",
+        "time": "10:30 – 11:15"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "11:20 – 12:05"
+      },
+      {
+        "author": "",
+        "title": "Lunch",
+        "time": "12:05 – 13:00"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:00 – 13:30"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:35 – 14:20"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "14:25 – 15:10"
+      },
+      {
+        "author": "",
+        "title": "Closing Session",
+        "time": "15:15 – 16:00"
       }
     ],
     "room2": [
@@ -38,6 +277,474 @@
         "author": "",
         "title": "Breakfast",
         "time": "8:30 - 9:00"
+      },
+      {
+        "author": "",
+        "title": "Opening Session",
+        "time": "9:00 - 9:30"
+      },
+      {
+        "author": "",
+        "title": "Break",
+        "time": "10:20 – 10:30"
+      },
+      {
+        "author": "",
+        "title": "Vote Session",
+        "time": "10:30 – 11:15"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "11:20 – 12:05"
+      },
+      {
+        "author": "",
+        "title": "Lunch",
+        "time": "12:05 – 13:00"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:00 – 13:30"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:35 – 14:20"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "14:25 – 15:10"
+      },
+      {
+        "author": "",
+        "title": "Closing Session",
+        "time": "15:15 – 16:00"
+      }
+    ],
+    "room3": [
+      {
+        "author": "",
+        "title": "Breakfast",
+        "time": "8:30 - 9:00"
+      },
+      {
+        "author": "",
+        "title": "Opening Session",
+        "time": "9:00 - 9:30"
+      },
+      {
+        "author": "",
+        "title": "Break",
+        "time": "10:20 – 10:30"
+      },
+      {
+        "author": "",
+        "title": "Vote Session",
+        "time": "10:30 – 11:15"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "11:20 – 12:05"
+      },
+      {
+        "author": "",
+        "title": "Lunch",
+        "time": "12:05 – 13:00"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:00 – 13:30"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:35 – 14:20"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "14:25 – 15:10"
+      },
+      {
+        "author": "",
+        "title": "Closing Session",
+        "time": "15:15 – 16:00"
+      }
+    ],
+    "room4": [
+      {
+        "author": "",
+        "title": "Breakfast",
+        "time": "8:30 - 9:00"
+      },
+      {
+        "author": "",
+        "title": "Opening Session",
+        "time": "9:00 - 9:30"
+      },
+      {
+        "author": "",
+        "title": "Break",
+        "time": "10:20 – 10:30"
+      },
+      {
+        "author": "",
+        "title": "Vote Session",
+        "time": "10:30 – 11:15"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "11:20 – 12:05"
+      },
+      {
+        "author": "",
+        "title": "Lunch",
+        "time": "12:05 – 13:00"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:00 – 13:30"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:35 – 14:20"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "14:25 – 15:10"
+      },
+      {
+        "author": "",
+        "title": "Closing Session",
+        "time": "15:15 – 16:00"
+      }
+    ],
+    "room5": [
+      {
+        "author": "",
+        "title": "Breakfast",
+        "time": "8:30 - 9:00"
+      },
+      {
+        "author": "",
+        "title": "Opening Session",
+        "time": "9:00 - 9:30"
+      },
+      {
+        "author": "",
+        "title": "Break",
+        "time": "10:20 – 10:30"
+      },
+      {
+        "author": "",
+        "title": "Vote Session",
+        "time": "10:30 – 11:15"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "11:20 – 12:05"
+      },
+      {
+        "author": "",
+        "title": "Lunch",
+        "time": "12:05 – 13:00"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:00 – 13:30"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:35 – 14:20"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "14:25 – 15:10"
+      },
+      {
+        "author": "",
+        "title": "Closing Session",
+        "time": "15:15 – 16:00"
+      }
+    ]
+  },
+  "day3": {
+    "room1": [
+      {
+        "author": "",
+        "title": "Breakfast",
+        "time": "8:30 - 9:00"
+      },
+      {
+        "author": "",
+        "title": "Opening Session",
+        "time": "9:00 - 9:30"
+      },
+      {
+        "author": "Dr. Mixael S Laufer",
+        "title": " How to Torrent a Pharmaceutical Drug: File Sharing Saves Lives",
+        "time": "9:30 - 10:15"
+      },
+      {
+        "author": "",
+        "title": "Break",
+        "time": "10:20 – 10:30"
+      },
+      {
+        "author": "",
+        "title": "Vote Session",
+        "time": "10:30 – 11:15"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "11:20 – 12:05"
+      },
+      {
+        "author": "",
+        "title": "Lunch",
+        "time": "12:05 – 13:00"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:00 – 13:30"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:35 – 14:20"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "14:25 – 15:10"
+      },
+      {
+        "author": "",
+        "title": "Closing Session",
+        "time": "15:15 – 16:00"
+      }
+    ],
+    "room2": [
+      {
+        "author": "",
+        "title": "Breakfast",
+        "time": "8:30 - 9:00"
+      },
+      {
+        "author": "",
+        "title": "Opening Session",
+        "time": "9:00 - 9:30"
+      },
+      {
+        "author": "",
+        "title": "Break",
+        "time": "10:20 – 10:30"
+      },
+      {
+        "author": "",
+        "title": "Vote Session",
+        "time": "10:30 – 11:15"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "11:20 – 12:05"
+      },
+      {
+        "author": "",
+        "title": "Lunch",
+        "time": "12:05 – 13:00"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:00 – 13:30"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:35 – 14:20"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "14:25 – 15:10"
+      },
+      {
+        "author": "",
+        "title": "Closing Session",
+        "time": "15:15 – 16:00"
+      }
+    ],
+    "room3": [
+      {
+        "author": "",
+        "title": "Breakfast",
+        "time": "8:30 - 9:00"
+      },
+      {
+        "author": "",
+        "title": "Opening Session",
+        "time": "9:00 - 9:30"
+      },
+      {
+        "author": "",
+        "title": "Break",
+        "time": "10:20 – 10:30"
+      },
+      {
+        "author": "",
+        "title": "Vote Session",
+        "time": "10:30 – 11:15"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "11:20 – 12:05"
+      },
+      {
+        "author": "",
+        "title": "Lunch",
+        "time": "12:05 – 13:00"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:00 – 13:30"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:35 – 14:20"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "14:25 – 15:10"
+      },
+      {
+        "author": "",
+        "title": "Closing Session",
+        "time": "15:15 – 16:00"
+      }
+    ],
+    "room4": [
+      {
+        "author": "",
+        "title": "Breakfast",
+        "time": "8:30 - 9:00"
+      },
+      {
+        "author": "",
+        "title": "Opening Session",
+        "time": "9:00 - 9:30"
+      },
+      {
+        "author": "",
+        "title": "Break",
+        "time": "10:20 – 10:30"
+      },
+      {
+        "author": "",
+        "title": "Vote Session",
+        "time": "10:30 – 11:15"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "11:20 – 12:05"
+      },
+      {
+        "author": "",
+        "title": "Lunch",
+        "time": "12:05 – 13:00"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:00 – 13:30"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:35 – 14:20"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "14:25 – 15:10"
+      },
+      {
+        "author": "",
+        "title": "Closing Session",
+        "time": "15:15 – 16:00"
+      }
+    ],
+    "room5": [
+      {
+        "author": "",
+        "title": "Breakfast",
+        "time": "8:30 - 9:00"
+      },
+      {
+        "author": "",
+        "title": "Opening Session",
+        "time": "9:00 - 9:30"
+      },
+      {
+        "author": "",
+        "title": "Break",
+        "time": "10:20 – 10:30"
+      },
+      {
+        "author": "",
+        "title": "Vote Session",
+        "time": "10:30 – 11:15"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "11:20 – 12:05"
+      },
+      {
+        "author": "",
+        "title": "Lunch",
+        "time": "12:05 – 13:00"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:00 – 13:30"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "13:35 – 14:20"
+      },
+      {
+        "author": "",
+        "title": "UnConference Session",
+        "time": "14:25 – 15:10"
+      },
+      {
+        "author": "",
+        "title": "Closing Session",
+        "time": "15:15 – 16:00"
       }
     ]
   }
