@@ -56,19 +56,29 @@
                 android:text="@string/title_activity_schedule"
                 android:textColor="@android:color/white" />
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:onClick="clickSubmissions"
+                android:text="@string/proposals"
+                android:textColor="@android:color/white" />
+
         </LinearLayout>
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="33dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
             android:text="@string/large_text"
             android:textColor="@android:color/white"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintLeft_toRightOf="@+id/linearLayout4"
-            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout4"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout"
             tools:layout_constraintLeft_creator="1"
             tools:layout_constraintRight_creator="1" />
@@ -83,6 +93,7 @@
             android:onClick="clickSubmissions"
             android:text="@string/proposals"
             android:textColor="@android:color/white"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
