@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,14 +7,12 @@
     android:background="@color/colorPrimaryDark"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="cu.cubaconf.Main"
-    tools:showIn="@layout/activity_main"
-    >
+    tools:showIn="@layout/activity_main">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        >
+        android:layout_margin="@dimen/text_margin">
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -54,7 +51,8 @@
                 android:backgroundTint="@color/orange"
                 android:onClick="clickSchedule"
                 android:text="@string/title_activity_schedule"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -63,7 +61,8 @@
                 android:backgroundTint="@color/colorPrimary"
                 android:onClick="clickSubmissions"
                 android:text="@string/proposals"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
 
         </LinearLayout>
 
@@ -71,8 +70,8 @@
             android:id="@+id/textView2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
             android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="32dp"
             android:text="@string/large_text"
             android:textColor="@android:color/white"
@@ -87,8 +86,8 @@
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:layout_marginBottom="32dp"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
             android:backgroundTint="@color/colorPrimary"
             android:onClick="clickSubmissions"
             android:text="@string/proposals"
@@ -103,9 +102,9 @@
             android:id="@+id/linearLayout4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
             android:layout_marginLeft="0dp"
             android:layout_marginTop="34dp"
+            android:layout_marginBottom="8dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -120,8 +119,8 @@
                 android:onClick="clickEmail"
                 android:text="{fa-envelope}"
                 android:textColor="@android:color/white"
-                android:textSize="25sp"
-                />
+                android:textSize="25sp" />
+
             <com.joanzapata.iconify.widget.IconTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -129,8 +128,8 @@
                 android:onClick="clickTelegram"
                 android:text="{fa-send}"
                 android:textColor="@android:color/white"
-                android:textSize="25sp"
-                />
+                android:textSize="25sp" />
+
             <com.joanzapata.iconify.widget.IconTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -138,8 +137,8 @@
                 android:onClick="clickTwitter"
                 android:text="{fa-twitter}"
                 android:textColor="@android:color/white"
-                android:textSize="25sp"
-                />
+                android:textSize="25sp" />
+
             <com.joanzapata.iconify.widget.IconTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -147,8 +146,8 @@
                 android:onClick="clickFacebook"
                 android:text="{fa-facebook}"
                 android:textColor="@android:color/white"
-                android:textSize="25sp"
-                />
+                android:textSize="25sp" />
+
             <com.joanzapata.iconify.widget.IconTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -156,8 +155,7 @@
                 android:onClick="clickLocation"
                 android:text="{fa-map-marker}"
                 android:textColor="@android:color/white"
-                android:textSize="25sp"
-                />
+                android:textSize="25sp" />
 
         </LinearLayout>
 

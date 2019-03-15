@@ -3,7 +3,7 @@
     <!--<string name="large_text2">asdf</string>-->
     <string name="large_text">
         What\'s CubaConf?\n\n
-            CubaConf, is an international conference about free software and open technologies that will have its second edition in La Habana from November 7th to 9th, 2017. CubaConf is a meeting from the international community of enthusiasts of the free technologie\'s world, peer to peer focused and collective development. It seeks the participation of people with different profiles and diverse geographical locations.\n\n
+            CubaConf, is the Cuban conference about free software and open technologies that will have its second edition in La Habana from November 20th to 22th, 2019. This is a meeting for the community of enthusiasts of the free technologie\'s world, peer to peer focused and collective development. It seeks the participation of people with different profiles and diverse geographical locations.\n\n
 
             From the organization of the conference, it is aimed at the diversity of both topics and projects, as of its participants, so the participation of women, minority groups, in these activities is crucial to build new inclusive spaces of knowledge and dialogue about technology. The main idea is to know people experience and organizations who work with and in free software, with old hardware technologies and little or slow bandwidth, to talk about how free software can help developing countries.\n\n
 
@@ -11,7 +11,15 @@
 
                 \t - The first day will be a variety of planned sessions and presentations\n
                 \t - On the second day the activities will be carried out in barcamp/unconference mode\n
-                \t - On the third day will be time and space to work together in small groups on the proposed projects or on any topic of interest.\n
+                \t - On the third day will be time and space to work together in small groups on the proposed projects or on any topic of interest.\n\n
+
+            And the central issues to be addressed will be:\n\n
+                \t - How to use Free software in educational institutions is economically favorable.\n
+                \t - Experiences using free technologies in social and community projects.\n
+                \t - New technologies, archival and historical memory.\n
+                \t - Free hardware and microcontrollers.\n
+                \t - Experiences of small companies that use free software to compete in the world market.\n\n\n
+
     </string>
     <string name="register">Register</string>
     <string name="send_proposal">Speak at CubaConf!</string>

@@ -98,7 +98,7 @@ public class Main extends AppCompatActivity {
                         editor.apply();
 
                         Intent callIntent = new Intent(Intent.ACTION_VIEW);
-                        callIntent.setData(Uri.parse("geo:23.139729, -82.35103"));
+                        callIntent.setData(Uri.parse("geo:23.136948, -82.381395"));
                         startActivity(callIntent);
                     }
                 });
