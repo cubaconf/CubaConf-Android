@@ -3,7 +3,7 @@
     <!--<string name="large_text">soy un texto</string>-->
     <string name="large_text">
         ¿Qué es CubaConf?\n\n
-            CubaConf, es la conferencia cubana sobre software libre y tecnologías abiertas a realizarse en La Habana del 20 al 22 de noviembre de 2019, siendo esta su tercera edición. Este es un espacio para la comunidad de entusiastas del mundo de las tecnologías libre, con un enfoque peer to peer y de desarrollo colectivo. Se busca la participación de personas con diferentes perfiles y orígenes geográficos variados.\n\n
+            CubaConf, es la conferencia cubana sobre software libre y tecnologías abiertas. Este es un espacio para la comunidad de entusiastas del mundo de las tecnologías libre, con un enfoque peer to peer y de desarrollo colectivo. Se busca la participación de personas con diferentes perfiles y orígenes geográficos variados.\n\n
             Desde la organización de la conferencia, se apunta hacia la diversidad tanto de temas y proyectos, como de sus participantes, por lo que la participación de las mujeres y grupos minoritarios, en estas actividades es crucial para construir nuevos espacios inclusivos de conocimiento y diálogo en los ámbitos tecnológicos. La idea es conocer las experiencias de las personas y organizaciones que trabajan en y con tecnologías libres, con viejas tecnologías de hardware y poco ancho de banda, conversar acerca de cómo pueden ayudar las Tecnologias Libres a países en vías de desarrollo.\n\n
 
             La conferencia se realizará durante tres días:\n
@@ -18,6 +18,7 @@
                 \t - Nuevas tecnologías, archivística y memoria histórica.\n
                 \t - Hardware libre y microcontroladores.\n
                 \t - Experiencias de pequeñas empresas que utilizan software libre para competir en el mercado mundial.\n\n\n
+        La fecha de la conferencia en 2020 está aún por definir.\n\n\n
 
     </string>
     <string name="register">Regístrate</string>
